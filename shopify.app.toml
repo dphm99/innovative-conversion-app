@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "innovative-conversion-app"
+client_id = "2566dfc46f7a1baaedab28206a25d94d"
+application_url = "https://moments-hs-model-helps.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://moments-hs-model-helps.trycloudflare.com/auth/callback",
+  "https://moments-hs-model-helps.trycloudflare.com/auth/shopify/callback",
+  "https://moments-hs-model-helps.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-07"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "quickstart-690dec8a.myshopify.com"
